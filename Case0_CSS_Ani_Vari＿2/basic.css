@@ -1,5 +1,5 @@
 :root {
-	--back_color: red; /* Default value */
+	--back_color:rgb(255, 0, 43); /* Default value */
 	--heartbeat: 0s; /* Default value */
 }
 
@@ -10,7 +10,7 @@ body {
 
 /* Style the header */
 header {
-    background-color: #666;
+    background-color: rgb(120, 185, 245);
     padding: 5px;
     text-align: center;
     color: white;
@@ -22,7 +22,7 @@ section {
 
 /* Style the footer */
 footer {
-    background-color: #777;
+    background-color: rgb(120, 185, 245);
     padding: 10px;
     text-align: center;
     color: white;
@@ -31,22 +31,28 @@ footer {
 div.grid1 {
 	background-color: var(--back_color);
 	animation-name: ani_grid1;
-    animation-duration: 4s;
+    animation-duration: 10s;
 }
 
 div.grid2 {
-	background-color: green;
+	background-color: rgb(255, 0, 119);
 	animation-name: ani_grid2;
 	animation-duration: 4s;
 	animation-iteration-count: infinite;
 }
 
 div.grid3 {
-	background-color: blue;
+	background-color: rgb(255, 0, 234);
 }
 
 div.grid4 {
-	background-color: yellow;
+	background-color: rgb(204, 0, 255);
+}
+
+div.grid5 {
+	background-color: rgb(140, 0, 255);
+	animation-name: ani_grid5;
+    animation-duration: 10s;
 }
 
 /* CSS transform standard syntax */
@@ -56,12 +62,17 @@ div.grid4 {
 }
 
 @keyframes ani_grid2 {
-	0% {background-color: black;}
-	20% {background-color: green;}
-	40% {background-color: yellow;}
-	60% {background-color: red;}
-	80% {background-color: blue;}
-	100% {background-color: green;}
+	0% {background-color: rgb(0, 0, 0);}
+	20% {background-color: rgb(0, 34, 128);}
+	40% {background-color: rgb(0, 119, 255);}
+	60% {background-color: rgb(0, 225, 255);}
+	80% {background-color: rgb(0, 255, 170);}
+	100% {background-color: rgb(0, 128, 90);}
+}
+
+@keyframes ani_grid5 {
+	from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
 }
 
 .fas {
